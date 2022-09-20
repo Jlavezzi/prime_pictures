@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <h1>The_Prime_Pictures</h1>
+    </div>
+    <div>
+        <img src="Images/prime.jpg" alt="" srcset="" width="30%" height="30%" id="prime">
+        
+            <div class="text">
+                <h2>
+                    Our Tradition:
+                </h2>
+                <p>At The_Prime_Pictures, we offer good photography coverage 
+                    <br/> with maximum and top notch quality.
+                   <br>  Your satisfaction is our view.</p>
+            </div>
+            
+           
+        
+        </div>
+    </div>
+
+    
+    <div class="body">
+        <h2> 
+          Services we offer:
+          <div class="mask">
+            <h6 data-show>Birthday shoot</h6>
+            <h6>Modelling shoots</h6>
+            <h6>Event coverage</h6>
+            <h6>Advertisment shoots</h6>
+            <h6>and so much more...</h6>
+    
+    
+          </div>
+        </h2>
+    
+         <div class="description">
+           <h1> Contact me via</h1>
+         </div>
+    </div>
+    <div class="socials">
+         
+        <a href="https://www.instagram.com/invites/contact/?i=1gkj2mqfue5hb&utm_content=bynxmr2"><img src="Images/instagram.png" alt=""></a>
+        <a href="tel:+2348165676672 ">+234 81 6567 6672</a>
+    </div> 
+    <hr>
+    <footer>
+        <h3>Copyright (c) 2022. All Rights Reserved <br> The Prime Pictures</h3>
+    </footer>
+        <script>
+           setInterval(()=>{
+  const show= document.querySelector('h6[data-show]');
+
+   const next = show.nextElementSibling ||document.querySelector('h6:first-child');
+
+   const right = document.querySelector('h6[data-right]');
+
+   if (right) {
+    right.removeAttribute('data-right');
+  }
+
+   show.removeAttribute('data-show');
+  show.setAttribute('data-right', '');
+
+  next.setAttribute('data-show', '')
+ }, 5000)
+
+  </script>
+ </body>
+</html>

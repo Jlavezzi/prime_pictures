@@ -1,0 +1,145 @@
+
+
+
+*{
+    /* background-color: #1d1d1f; */
+    color: aliceblue;
+    font-family:cursive;
+  }
+  
+  body{
+    background-image: url(Images/prime1.jpg);
+    background-size: 215%;
+    
+ 
+  }
+  
+  h2{
+    width: 50%;
+    font-size: 100px;
+    font-family: Helvetica;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: pink
+  }
+  #prime{
+    border-radius: 75%;}
+  .mask{
+    height: 106px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+    color:black ;
+  /* #1d1d1f */
+  }
+  .mask h6{
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+     left: 3px;
+    padding-left: var(--offset);
+    background-size: 100% 100%;
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-repeat: no-repeat;
+    width:0.1%;
+    height:150px;
+  
+  }
+  
+  .mask h6[data-show]{
+    transform: translateY(-100%);
+    transition: 5s transform ease-in-out;
+    width: 100%;
+  
+  }
+  
+  .mask h6:nth-child(1){
+    background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+  }
+  
+  .mask h6:nth-child(2){
+    background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+  }
+  .mask h6:nth-child(3){
+    background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+  }
+  .mask h6:nth-child(4){
+    background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+  }
+  .mask h6:nth-child(5){
+    background-image: linear-gradient( 45deg, lightgreen 50%, black);
+  }
+  
+  .description{
+    color: whitesmoke
+  }
+  
+  
+  @media screen and (max-width:990px) {
+
+
+    .mask h6{
+      top: 100px;
+      padding-bottom: var(--offset);
+        -webkit-background-clip:text;
+          -webkit-text-fill-color:transition;
+    }
+    .mask h6[data-show]{
+      transform: translateY(-100%);
+      transition: 2s transform ease-in-out;
+      width: 100%;
+    }
+    }
+  
+
+    @media screen  and  (max-width: 500px){
+
+
+        .mask{
+            height: 210px;
+        }
+         
+  h2{
+    width: 80%;
+    font-size: 30px;
+    font-family: Helvetica;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: pink
+  }
+        .mask h6{
+            top: 100px;
+            padding-bottom: var(--offset);
+              -webkit-background-clip:text;
+                -webkit-text-fill-color:transition;
+          }
+          .mask h6[data-show]{
+            font-size: 50px;
+            transform: translateY(-100%);
+            transition: 4s transform ease-in-out;
+            width: 100%;
+          }  
+    }
+
+
+
+.socials{
+    display: flex;
+    margin-left: 40%;
+    
+    position: relative; top: 100%;
+}
+.socials a{
+    margin: 8px;
+}
+
+footer{
+    text-align: center;
+    background-color: #1d1d1f;
+    background-size: contain;
+}
+footer h3{
+    padding: 10px 10px 30px 20px;
+}
